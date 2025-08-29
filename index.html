@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCSS - Navjawan Commando Security Services Pvt. Ltd.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0d4e83;
+            --secondary: #d4af37;
+            --dark: #1e2a38;
+            --light: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        
+        .navbar {
+            background-color: var(--primary);
+            padding: 15px 0;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: white !important;
+            font-size: 1.5rem;
+        }
+        
+        .nav-link {
+            color: rgba(255, 255, 255, 0.85) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: var(--secondary) !important;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1586769852044-692c976ec43b?ixlib=rb-4.0.3') center/cover no-repeat;
+            color: white;
+            padding: 120px 0 100px;
+            text-align: center;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--secondary);
+            margin: 15px auto 0;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            padding: 10px 25px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0b3d69;
+            border-color: #0b3d69;
+            transform: translateY(-2px);
+        }
+        
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .team-img {
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .certificate {
+            background-color: var(--light);
+            padding: 80px 0;
+        }
+        
+        .client-logo {
+            height: 80px;
+            margin: 15px;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s;
+        }
+        
+        .client-logo:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+        
+        .contact-info {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0;
+        }
+        
+        footer {
+            background-color: #0a2c4a;
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: var(--secondary);
+        }
+        
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://via.placeholder.com/50x50/0d4e83/ffffff?text=NCSS" alt="NCSS Logo" class="me-2">
+                NCSS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">THE TOTAL PROTECTION SOLUTION</h1>
+            <p class="lead mb-5">A Complete Security Network & Man Power Solution</p>
+            <a href="#contact" class="btn btn-lg btn-primary me-3">Get in Touch</a>
+            <a href="#services" class="btn btn-lg btn-outline-light">Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">WHO WE ARE</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="lead">Navjawan Commando Security Services Pvt. Ltd. (OPC) was incorporated in 2014 and registered under sec. 7(2) PSARA 2005 with all mandatory statutory compliance.</p>
+                    <p>We are empanelled in Directorate General of Resettlement and are one of the fast growing organization in our group. We provide both male and female security personnel who can be civilian or ex army personnel.</p>
+                    <p>We make sure that all our staff is vetted to regulatory standards and senior members conduct regular quality assurance checks at client premises.</p>
+                    <div class="d-flex mt-4">
+                        <div class="me-4">
+                            <div class="stats-number">30%</div>
+                            <div class="fw-medium">Annual Growth</div>
+                        </div>
+                        <div class="me-4">
+                            <div class="stats-number">10+</div>
+                            <div class="fw-medium">Cities</div>
+                        </div>
+                        <div>
+                            <div class="stats-number">100+</div>
+                            <div class="fw-medium">Professionals</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3" alt="Security Team" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">OUR SERVICES</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h4>Security & Surveillance</h4>
+                        <p>Professional security personnel for complete protection of your premises and assets.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h4>House Keeping</h4>
+                        <p>Comprehensive facility management and housekeeping services for businesses.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-id-card-alt"></i>
+                        </div>
+                        <h4>VIP Protection</h4>
+                        <p>Armed and unarmed protection services for VIPs and high-profile individuals.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-fire-extinguisher"></i>
+                        </div>
+                        <h4>Fire Safety</h4>
+                        <p>Fire fighting training and equipment maintenance services.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h4>Security Audits</h4>
+                        <p>Comprehensive security assessments to identify vulnerabilities and solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-people-arrows"></i>
+                        </div>
+                        <h4>Manpower Solutions</h4>
+                        <p>Providing trained security professionals for various industries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">OUR LEADERSHIP TEAM</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="https://via.placeholder.com/300x300/0d4e83/ffffff?text=R.K.Singh" class="card-img-top team-img" alt="Mr. R.K. Singh">
+                        <div class="card-body">
+                            <h5 class="card-title">MR. R.K. SINGH</h5>
+                            <p class="text-muted">GMD & Founder</p>
+                            <p class="card-text">Former Indian Army with 20+ years of experience in intelligence and security. Recognized member of CAPSI.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="https://via.placeholder.com/300x300/0d4e83/ffffff?text=S.Pandey" class="card-img-top team-img" alt="Mr. Santosh Pandey">
+                        <div class="card-body">
+                            <h5 class="card-title">MR. SANTOSH PANDEY</h5>
+                            <p class="text-muted">Chief of Client Coordination</p>
+                            <p class="card-text">10+ years of experience in client relations and business development.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="https://via.placeholder.com/300x300/0d4e83/ffffff?text=B.Mishra" class="card-img-top team-img" alt="Mr. Bachcha Mishra">
+                        <div class="card-body">
+                            <h5 class="card-title">MR. BACHCHA MISHRA</h5>
+                            <p class="text-muted">Ex-Sub Inspector Bihar Police</p>
+                            <p class="card-text">Leading public relations with extensive experience in law enforcement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificate py-5">
+        <div class="container">
+            <h2 class="section-title text-center">OUR CERTIFICATIONS</h2>
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="p-4 bg-white rounded shadow">
+                        <i class="fas fa-certificate fa-3x text-primary mb-3"></i>
+                        <h5>PSARA License</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="p-4 bg-white rounded shadow">
+                        <i class="fas fa-award fa-3x text-primary mb-3"></i>
+                        <h5>ISO 45001:2018</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="p-4 bg-white rounded shadow">
+                        <i class="fas fa-file-contract fa-3x text-primary mb-3"></i>
+                        <h5>GST Registered</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="p-4 bg-white rounded shadow">
+                        <i class="fas fa-handshake fa-3x text-primary mb-3"></i>
+                        <h5>CAPSI Member</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">OUR ESTEEMED CLIENTS</h2>
+            <div class="row align-items-center justify-content-center">
+                <div class="col text-center">
+                    <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Vodafone" class="client-logo" alt="Vodafone">
+                    <img src="https://via.placeholder.com/150x80/ffffff/000000?text=BSNL" class="client-logo" alt="BSNL">
+                    <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Maruti" class="client-logo" alt="Maruti Suzuki">
+                    <img src="https://via.placeholder.com/150x80/ffffff/000000?text=ICICI" class="client-logo" alt="ICICI Bank">
+                    <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Renault" class="client-logo" alt="Renault">
+                    <img src="https://via.placeholder.com/150x80/ffffff/000000?text=Ashoka" class="client-logo" alt="Ashoka Buildcon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-info">
+        <div class="container">
+            <h2 class="section-title text-center text-white">CONTACT US</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Head Office</h4>
+                            <p class="card-text">
+                                Near Petrol Pump, At-Rattubigha, Dalmianagar<br>
+                                Rohtas, Bihar - 821505<br>
+                                India
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope me-2"></i> ncss.rkgroupdlm@gmail.com<br>
+                                <i class="fas fa-phone me-2"></i> 9097806695, 9162376522
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Send us a Message</h4>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" placeholder="Your Phone">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-3">NAVJAWAN COMMANDO SECURITY SERVICES PVT. LTD. (OPC)</p>
+            <div class="social-icons mb-3">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>© 2023 NCSS. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
